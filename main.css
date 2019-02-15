@@ -1,0 +1,119 @@
+div {
+    font-size: 12px;
+    color: rgb(236, 236, 236);
+}
+
+button {
+    color: rgb(236, 236, 236);
+}
+
+body {
+    font-family: 'Montserrat';
+}
+
+header {
+    margin: 30px auto;
+    font-size: 3em;
+    color: black;
+}
+
+h1 {
+    text-align: center;
+}
+
+.outerShell {
+    display: grid;
+    grid-template-rows: 30% 70%;
+    background-color: black;
+    height: 450px;
+    width: 30%;
+    min-width: 400px;
+    margin: auto;
+}
+
+.screen {
+    display: grid;
+    padding: 0px 20px;
+}
+
+.screen div{
+    display: block;
+    text-align: right;
+    padding-top: 4%;
+    overflow-x: auto;
+    white-space: nowrap;
+}
+
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    max-width: 100%;
+    grid-template-areas: 
+        "clear clear back dividedBy"
+        "seven eigth nine multiply"
+        "four five six minus"
+        "one two three plus"    
+        "zero zero comma equal";
+}
+
+.buttons button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: solid 1px black;
+    font-size: 2em;
+}
+
+.light {background-color: rgb(45, 45, 45);}
+
+.light:hover {
+    background-color: rgb(39, 39, 39);
+    color: rgb(255, 1, 1);
+    text-shadow: 0 0 10px rgb(250, 122, 122);
+}
+
+.dark {background-color: rgb(26, 26, 26);}
+
+.dark:hover {
+    background-color: rgb(148, 1, 1);
+}
+
+.red {
+    background-color: rgb(199, 61, 0);
+    color: black;
+}
+
+.red:hover {
+    background-color: rgb(78, 161, 0);
+    color: black;
+}
+
+.upperScreen {
+    color: rgb(127, 127, 127);
+    font-size: 2em;
+}
+
+.lowerScreen {
+    font-size: 3em;
+}
+
+.clear      {grid-area: clear;}
+.back       {grid-area: back;}
+.dividedBy  {grid-area: dividedBy;}
+.seven      {grid-area: seven;}
+.eigth      {grid-area: eigth;}
+.nine       {grid-area: nine;}
+.multiply   {grid-area: multiply;}
+.four       {grid-area: four;}
+.five       {grid-area: five;}
+.six        {grid-area: six;}
+.minus      {grid-area: minus;}
+.one        {grid-area: one;}
+.two        {grid-area: two;}
+.three      {grid-area: three;}
+.plus       {grid-area: plus;}
+.zero       {grid-area: zero;}
+.comma      {grid-area: comma;}
+.equal      {grid-area: equal;}

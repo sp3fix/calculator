@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Online Calculator</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet"> 
+    <link rel="stylesheet" type="text/css" media="screen" href="reset.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+</head>
+<body>
+  <div id="main">
+    <header>
+      <h1>Math is FUN</h1>
+    </header>
+    <div class="outerShell">
+      <section class="screen">
+        <div class="upperScreen"></div>
+        <div class="lowerScreen"></div>
+      </section>
+      <section class="buttons">
+        <button id="0" onclick="addNumber(this.id)" class="number zero light">0</button>
+        <button id="1" onclick="addNumber(this.id)" class="number one light">1</button>
+        <button id="2" onclick="addNumber(this.id)" class="number two light">2</button>
+        <button id="3" onclick="addNumber(this.id)" class="number three light">3</button>
+        <button id="4" onclick="addNumber(this.id)" class="number four light">4</button>
+        <button id="5" onclick="addNumber(this.id)" class="number five light">5</button>
+        <button id="6" onclick="addNumber(this.id)" class="number six light">6</button>
+        <button id="7" onclick="addNumber(this.id)" class="number seven light">7</button>
+        <button id="8" onclick="addNumber(this.id)" class="number eigth light">8</button>
+        <button id="9" onclick="addNumber(this.id)" class="number nine light">9</button>
+
+        <button id="/" onclick="addOperator(this.id)" class="dividedBy dark"><img src="images/dividedBy.png" alt="dividedBy" height="15px"></button>
+        <button id="*" onclick="addOperator(this.id)" class="multiply dark"><img src="images/multiply.png" alt="multiply" height="15px"></button>
+        <button id="-" onclick="addOperator(this.id)" class="minus dark"><img src="images/minus.png" alt="minus" width="19px"></button>
+        <button id="+" onclick="addOperator(this.id)" class="plus dark"><img src="images/plus.png" alt="plus" height="15px"></button>
+
+        <button onclick="clearMemory()" class="clear dark">Clear</button>
+        <button onclick="undo()" class="back dark"><img src="images/undo.png" alt="undo" height="15px"></button>
+        <button onclick="addComma()" class="comma light">,</button>
+        <button onclick="equalSign()" class="equal red"><img src="images/equal.png" alt="equal" width="15px"></button>
+      </section>
+    </div>
+</body>
+<script src="main.js"></script>
+</html>
